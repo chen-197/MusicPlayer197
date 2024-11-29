@@ -46,12 +46,12 @@ MusicPlayer::~MusicPlayer() {
 
 void MusicPlayer::playMusic() {
     if (ui->playlistWidget->currentRow() >= 0) {
-        //if (player->playbackState() == QMediaPlayer::StoppedState) {
+        if (player->playbackState() == QMediaPlayer::StoppedState) {
             playSelectedMusic();
-        //} else {
-        //    player->play();
-        //}
-        //ui->statusLabel->setText("状态: 播放中");
+        } else {
+            player->play();
+        }
+        ui->statusLabel->setText("状态: 播放中");
     }
 }
 
