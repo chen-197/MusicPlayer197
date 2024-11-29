@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <!-- 在此处添加资源文件路径，例如图标或音频文件 -->
+    </qresource>
+</RCC>

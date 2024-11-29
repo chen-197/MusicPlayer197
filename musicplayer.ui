@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MusicPlayer</class>
+ <widget class="QWidget" name="MusicPlayer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>音乐播放器</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QListWidget" name="playlistWidget">
+     <property name="toolTip">
+      <string>播放列表</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QSlider" name="progressBar">
+     <property name="toolTip">
+      <string>播放进度</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <item>
+      <widget class="QPushButton" name="playButton">
+       <property name="toolTip">
+        <string>开始播放选中的音乐</string>
+       </property>
+       <property name="text">
+        <string>播放</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pauseButton">
+       <property name="toolTip">
+        <string>暂停当前播放的音乐</string>
+       </property>
+       <property name="text">
+        <string>暂停</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="stopButton">
+       <property name="toolTip">
+        <string>停止播放音乐</string>
+       </property>
+       <property name="text">
+        <string>停止</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addButton">
+       <property name="toolTip">
+        <string>添加单个音乐文件到播放列表</string>
+       </property>
+       <property name="text">
+        <string>添加音乐</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addFolderButton">
+       <property name="toolTip">
+        <string>添加文件夹中的所有音乐文件</string>
+       </property>
+       <property name="text">
+        <string>批量添加</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="removeButton">
+       <property name="toolTip">
+        <string>从播放列表中移除选中的音乐</string>
+       </property>
+       <property name="text">
+        <string>移除音乐</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QComboBox" name="playModeBox">
+     <property name="toolTip">
+      <string>选择播放模式</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>顺序播放</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>随机播放</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>循环播放</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="statusLabel">
+     <property name="text">
+      <string>状态: 停止</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
